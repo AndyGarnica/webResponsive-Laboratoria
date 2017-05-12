@@ -1,7 +1,5 @@
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -24,13 +22,13 @@ header {
   width: 50px;
   height: 50px;
 }
-.contenedor {
+.container {
   width: 98%;
   margin: auto;
 }
 
 
-header .contenedor {
+header .container {
   display: table;
 }
 
@@ -109,7 +107,7 @@ header label {
     height: 405px;
   }
 
-  #banner .contenedor {
+  #banner .container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -152,7 +150,7 @@ header label {
   }
 
   /*formulario*/
-  #formulario .contenedor{
+  #formulario .container{
     width: 50%;
     margin: 0 auto;
     background: #333;
@@ -185,7 +183,7 @@ margin-top: 20px;
     text-decoration: none;
     padding: 7px;
     margin-top: 10px;
-    border: 3px solid ##ffb600;
+    border: 3px solid #ffb600;
 }
 
 #formulario a:hover {
@@ -199,5 +197,10 @@ margin-top: 20px;
 }
 
 /*footer*/
-
+footer p{
+text-align: center;
+color: #ffb600;
+font-size: 25px;
+background-color: #333;
+}
 /**/
