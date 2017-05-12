@@ -148,6 +148,12 @@ header label {
       margin-top: -200px;
     }
   }
+/*Texto Desktop*/
+@media (min-width:1024px) and (max-width: 2000px){
+.container#img-text{
+  display: none;
+  }
+}
 
   /*formulario*/
   #formulario .container{
