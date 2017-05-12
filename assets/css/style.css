@@ -1,155 +1,203 @@
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
-    width: 100%;
-    height: 50px;
-    background: #333;
-    color: #ffb600;
+  width: 100%;
+  height: 50px;
+  background: #333;
+  color: #ffb600;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 .logo{
   width: 50px;
   height: 50px;
 }
 .contenedor {
-    width: 98%;
-    margin: auto;
+  width: 98%;
+  margin: auto;
 }
 
 
 header .contenedor {
-    display: table;
+  display: table;
 }
 
 section {
-    width: 100%;
-    margin-bottom: 25px;
-}
-@media (min-width:1024px) {
-    .contenedor {
-        width: 1000px;
-    }
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 /*menu*/
 #menu-bar {
-    display: none;
+  display: none;
 }
 
 header label {
-    float: right;
-    font-size: 28px;
-    margin: 6px 0;
-    cursor: pointer;
+  float: right;
+  font-size: 28px;
+  margin: 6px 0;
+  cursor: pointer;
 }
 
 .menu {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(51,51,51,0.9);
-    transition: all 0.5s;
-    transform: translateX(-100%);
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(51,51,51,0.9);
+  transition: all 0.5s;
+  transform: translateX(-100%);
 }
 
 .menu a {
-    display: block;
-    color: #ffb600;
-    height: 50px;
-    text-decoration: none;
-    padding: 15px;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+  display: block;
+  color: #ffb600;
+  height: 50px;
+  text-decoration: none;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 .menu a:hover {
-    background: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.3);
 }
 
 #menu-bar:checked ~ .menu {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 @media (min-width:1024px) {
-    .menu {
-        position: static;
-        width: auto;
-        height: auto;
-        transform: translateX(0%);
-        float: right;
-        display: flex;
-    }
+  .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    transform: translateX(0%);
+    float: right;
+    display: flex;
+  }
 
-    .menu a {
-        border: none;
-    }
+  .menu a {
+    border: none;
+  }
 
-    header label {
-        display: none;
-    }
+  header label {
+    display: none;
+  }
 
 
-/*banner*/
-#banner {
+  /*banner*/
+  #banner {
     margin-top: 50px;
     position: relative;
-}
+  }
 
-#banner img {
+  #banner img {
     width: 100%;
-    height: 100%;
-}
+    height: 405px;
+  }
 
-#banner .contenedor {
+  #banner .contenedor {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     color: #ffb600;
     text-align: right;
-}
-
-#banner h2 {
+  }
+  #banner h2 {
     font-size: 28px;
-}
-@media (min-width:480px) {
+  }
+  #banner p {
+    font-size: 28px;
+  }
+  @media (min-width:480px) {
     #banner h2 {
-        font-size: 40px;
+      font-size: 40px;
     }
 
-    #banner a {
-        margin-top: 25px;
+    #banner p {
+      margin-top: 25px;
     }
-}
+  }
 
-@media (min-width:768px) {
+  @media (min-width:768px) {
     #banner {
-        height: 300px;
-        overflow: hidden;
+      height: 300px;
+      overflow: hidden;
     }
 
     #banner img {
-        height: auto;
-        margin-top: -100px;
+      height: auto;
+      margin-top: -100px;
     }
+  }
+
+  @media (min-width:1024px) {
+    #banner img {
+      margin-top: -200px;
+    }
+  }
+
+  /*formulario*/
+  #formulario .contenedor{
+    width: 50%;
+    margin: 0 auto;
+    background: #333;
+    padding: 30px;
+  }
+  #formulario h1{
+    font-size: 24px;
+    text-align: center;
+    color: #ffb600;
+  }
+  #formulario form{
+margin-top: 20px;
+
+ }
+  #formulario input{
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 35px
+  }
+#formulario textarea{
+  height: 80px;
+
+  width: 100%;
+}
+#formulario a {
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid ##ffb600;
 }
 
-@media (min-width:1024px) {
-    #banner img {
-        margin-top: -200px;
-    }
+#formulario a:hover {
+    background: rgba(51,51,51,0.5);
 }
+@media (min-width:701px) {
+  #formulario{
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+/*footer*/
+
+/**/
